@@ -1,8 +1,10 @@
+gsap.to(".text p",{
+  fontSize:"3rem"
+})
 function fade() {
   const btn = document.querySelector(".btn");
   const cir = document.createElement("div");
 
-  btn.addEventListener("click", () => {
     document.body.appendChild(cir);
     cir.classList.add("cir");
 
@@ -20,5 +22,5 @@ function fade() {
       borderRadius: "50%",
       duration: 6
     });
-  });
+  
 }
